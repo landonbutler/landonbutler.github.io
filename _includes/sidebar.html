@@ -5,7 +5,7 @@
     {%- else -%}
       {%- assign avatar = site.avatar | relative_url -%}
     {%- endif -%}
-    <img src="{{ avatar }}" class="author-avatar u-photo align-center" alt="{{ site.author }}">
+    <img src="{{ avatar }}" draggable="false" class="author-avatar u-photo align-center" alt="{{ site.author }}">
   </div>
 {%- endif %}
 
@@ -15,10 +15,10 @@
             <p style="margin-bottom: 1rem">Senior @ Penn</p>
         </li>
         <li>
-            <p style="margin-bottom: 0rem">Data Science</p>
+            <a style="margin-bottom: 0rem" href="https://dats.seas.upenn.edu/">Data Science</a>
         </li>
         <li>
-            <p style="margin-bottom: 0rem">Systems Engineering</p>
+            <a style="margin-bottom: 0rem" href="https://www.ese.upenn.edu/">Systems Engineering</a>
         </li>
     </ul>
 </div>
