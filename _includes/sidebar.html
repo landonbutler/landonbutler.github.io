@@ -9,36 +9,16 @@
   </div>
 {%- endif %}
 
-<div class="sidebar-section">
-  <ul class="contact-list">
-    {% if site.author -%}
-      <li>
-        <i class="sidebar-icon fas fa-at"></i>
-        <span class="contact-info p-name">{{ site.author | escape }}</span>
-      </li>
-    {%- endif %}
-    {% if site.email -%}
-      <li>
-        <i class="sidebar-icon fas fa-envelope"></i>
-        <a class="contact-info u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-      </li>
-    {%- endif %}
-    {% if site.location -%}
-      <li>
-        <i class="sidebar-icon fas fa-location-arrow"></i>
-        <a class="contact-info u-location" href="https://www.google.com/maps/search/{{ site.location }}">{{ site.location }}</a>
-      </li>
-    {%- endif %}
-  </ul>
+<div class="sidebar-section" style={text-align: center}>
+    <ul class="contact-list">
+        <li>
+            <p>Senior at Penn</p>
+        </li>
+        <li>
+            <p>Data Science & Systems Engineering</p>
+        </li>
+    </ul>
 </div>
-
-{% if site.subscribe != false -%}
-<div class="sidebar-section feed-subscribe">
-  <a href="{{ 'feed.xml' | relative_url }}">
-    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
-  </a>
-</div>
-{%- endif %}
 
 {% if site.data.social -%}
   <div class="sidebar-section">
