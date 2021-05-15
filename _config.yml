@@ -1,8 +1,7 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
+title: Landon Butler
+author: Landon Butler
 avatar: /logo.png
-email: ngzhio@gmail.com
+email: landonb3@seas.upenn.edu
 
 plugins:
   - jekyll-seo-tag
@@ -12,6 +11,7 @@ plugins:
   - jekyll-theme-hamilton
 paginate: 10
 
+skin: daylight
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
 # google_analytics: 
