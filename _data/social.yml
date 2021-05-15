@@ -1,12 +1,13 @@
-- title: Twitter
-  url: https://twitter.com/ngzhio
-  icon: fab fa-twitter
-- title: GitHub
-  url: https://github.com/ngzhio/jekyll-theme-hamilton
-  icon: fab fa-github
+- title: Email
+  url: mailto:landonb3@seas.upenn.edu
+  icon: fas fa-envelope
 - title: LinkedIn
   url: https://www.linkedin.com/in/landonbutler/
   icon: fab fa-linkedin
-- title: Email
-  url: mailto:landonb3@seas.upenn.edu
-  icon: fab fa-envelope
+- title: GitHub
+  url: https://github.com/landonbutler
+  icon: fab fa-github
+- title: GoogleScholar
+  url: https://scholar.google.com/citations?user=tdJtfN8AAAAJ&hl=en
+  icon: fa_svg google-scholar
+
