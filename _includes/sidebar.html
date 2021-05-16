@@ -17,10 +17,10 @@
             <p style="margin-bottom: 1rem;font-weight: 600;">Senior @ Penn</p>
         </li>
         <li>
-            <a style="margin-bottom: 0rem; font-weight: 600;" href="https://dats.seas.upenn.edu/">Data Science</a>
+            <a style="margin-bottom: 0rem; font-weight: 600; color: #203354" href="https://dats.seas.upenn.edu/">Data Science</a>
         </li>
         <li>
-            <a style="margin-bottom: 0rem; font-weight: 600;" href="https://www.ese.upenn.edu/">Systems Engineering</a>
+            <a style="margin-bottom: 0rem; font-weight: 600;color: #203354" href="https://www.ese.upenn.edu/">Systems Engineering</a>
         </li>
     </ul>
 </div>
@@ -30,7 +30,7 @@
     <ul class="social-icons">
         {% for social in site.data.social -%}
         <li>
-            <a class="social-icon" href="{{ social.url }}"><i style="color: #192841" class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+            <a class="social-icon" href="{{ social.url }}"><i style="color: #203354" class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
         </li>
         {%- endfor %}
     </ul>
