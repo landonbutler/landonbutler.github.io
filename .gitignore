@@ -5,3 +5,4 @@
 _site
 Gemfile.lock
 /.vs/slnx.sqlite
+/.vs
