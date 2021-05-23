@@ -31,9 +31,9 @@
       </label>
 
       <ul class="trigger">
-        {%- for nav in site.data.navigation -%}
+          {%- for nav in site.data.navigation -%}
           {%- if nav.title -%}
-            {% if nav.sublinks %}
+          {% if nav.sublinks %}
           <li class="dropdown" href="#">
               <a href="javascript:void(0)" class="dropbtn">{{ nav.title | escape }}</a>
               <div class="dropdown-content">
@@ -42,11 +42,15 @@
                   {%- endfor %}
               </div>
           </li>
-            {% else %}
-              <li><a style="padding-right: 3rem" class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
-            {% endif %}
+          {% else %}
+          {%- if nav.title == "CV" -%}
+          <li><a style="padding-right: 3rem" class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
+          {% else %}
+          <li><a class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
+          {% endif %}
+          {% endif %}
           {%- endif -%}
-        {%- endfor -%}
+          {%- endfor -%}
       </ul>
     </nav>
   {% endif %}
