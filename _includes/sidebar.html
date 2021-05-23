@@ -17,10 +17,10 @@
             <p style="margin-bottom: 1rem;font-weight: 600;">Senior @ Penn</p>
         </li>
         <li>
-            <a class="sidebarLinks" target="_blank" style="margin-bottom: 0rem; font-weight: 600; color: #203354" href="https://dats.seas.upenn.edu/">Data Science</a>
+            <a class="sidebarLinks" target="_blank" style="margin-bottom: 0rem; font-weight: 600;" href="https://dats.seas.upenn.edu/">Data Science</a>
         </li>
         <li>
-            <a class="sidebarLinks" target="_blank" style="margin-bottom: 0rem; font-weight: 600;color: #203354" href="https://www.ese.upenn.edu/">Systems Engineering</a>
+            <a class="sidebarLinks" target="_blank" style="margin-bottom: 0rem; font-weight: 600;" href="https://www.ese.upenn.edu/">Systems Engineering</a>
         </li>
     </ul>
 </div>
@@ -31,9 +31,9 @@
         {% for social in site.data.social -%}
         <li>
             {% if social.title == 'Email' -%}
-            <a class="social-icon sidebarLinks" href="{{ social.url }}"><i style="color: #203354" class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+            <a class="social-icon sidebarLinks" href="{{ social.url }}"><i  class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
             {%- else %}
-            <a class="social-icon sidebarLinks" target="_blank" href="{{ social.url }}"><i style="color: #203354" class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+            <a class="social-icon sidebarLinks" target="_blank" href="{{ social.url }}"><i  class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
             {%- endif %}
         </li>
         {%- endfor %}
