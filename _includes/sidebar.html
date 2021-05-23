@@ -30,7 +30,9 @@
     <ul class="social-icons" style="text-align: center">
         {% for social in site.data.social -%}
         <li>
+            {% if social.title == 'Email' -%}
             <a class="social-icon sidebarLinks" target="_blank" href="{{ social.url }}"><i style="color: #203354" class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+            {%- endif %}
         </li>
         {%- endfor %}
     </ul>
