@@ -43,10 +43,10 @@
               </div>
           </li>
           {% else %}
-          {%- if nav.title == "CV" -%}
-          <li><a style="padding-right: 3rem" class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
+          {%- if nav.title == "CV"  -%}
+          <li><a style="padding-right: 3rem;font-weight: 600;" class="{% if page.url == nav.url %}current-page{% endif %} site-nav" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
           {% else %}
-          <li><a class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
+          <li><a style="font-weight: 600;" class="{% if page.url == nav.url %}current-page{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a></li>
           {% endif %}
           {% endif %}
           {%- endif -%}
