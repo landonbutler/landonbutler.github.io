@@ -33,7 +33,7 @@
             {% if social.title == 'Email' -%}
             <a class="social-icon sidebarLinks" href="{{ social.url }}"><i  class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
             {%- else %}
-            <a class="social-icon sidebarLinks" target="_blank" href="{{ social.url }}"><i  class="{{ social.icon | default: 'fas fa-link' }} fa-2x" title="{{ social.title }}"></i></a>
+            <a class="social-icon sidebarLinks" target="_blank" href="{{ social.url }}"><i  class="{{ social.icon | default: 'fas fa-link' }} fa-2x sidebarLinks" title="{{ social.title }}"></i></a>
             {%- endif %}
         </li>
         {%- endfor %}
