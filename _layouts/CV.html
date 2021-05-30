@@ -8,7 +8,7 @@ layout: default
     document.addEventListener("adobe_dc_view_sdk.ready", function () {
         var adobeDCView = new AdobeDC.View({ clientId: "69855b3cd0b34061887d605f3aa3437d", divId: "adobe-dc-view" });
         adobeDCView.previewFile({
-            content: { location: { url: "https://drive.google.com/file/d/1pZZ1eDvylV5VT4YiSdjP9VUyJm51sdGs/view?usp=sharing" } },
+            content: { location: { url: "https://drive.google.com/file/d/1pZZ1eDvylV5VT4YiSdjP9VUyJm51sdGs/preview" } },
             metaData: { fileName: "Landon Butler - CV.pdf" }
         }, { embedMode: "SIZED_CONTAINER" });
     });
