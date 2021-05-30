@@ -4,11 +4,15 @@ layout: default
 <div class="home">
     <h1>Anomaly Detection on Hypergraphs</h1>
     <hr />
-    <h1>Learning Connectivity for Data Distribution in Robot Teams</h1>
     <div style="text-align:center">
-        <p>*Tolstaya, E., <strong>*Butler, L.</strong>, Mox, D., Paulos, J., Kumar, V., & Ribeiro, A. (2021). Learning Connectivity for Data Distribution in Robot Teams. <emph>arXiv preprint arXiv:2103.05091.</emph></p>
-        <p><a target="_blank" class="sidebarLinks" href="https://github.com/landonbutler/Learning-Connectivity">Code</a></p>
+        <h1>Learning Connectivity for Data Distribution in Robot Teams</h1>
+        <p><a target="_blank" class="sidebarLinks" style="        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+"href="https://github.com/landonbutler/Learning-Connectivity">Code</a></p>
     </div>
+    <p>*Tolstaya, E., <strong>*Butler, L.</strong>, Mox, D., Paulos, J., Kumar, V., & Ribeiro, A. (2021). Learning Connectivity for Data Distribution in Robot Teams. <emph>arXiv preprint arXiv:2103.05091.</emph></p>
 
     <p>The majority of algorithms for control of multi-robot teams operate under the assumption that low-latency, global state information necessary to coordinate agent actions can readily be disseminated among the team. However, in harsh environments, especially in those with no existing communication infrastructure, robots must form ad-hoc networks, forcing the team to operate in a distributed fashion. To overcome this challenge, we developed a task-agnostic, decentralized, low-latency method for data distribution in ad-hoc networks using Graph Neural Networks (GNN).</p>
     <p>Our approach enables multi-agent algorithms reliant on global state information to function by ensuring the global information is readily available at each robot. To do this, agents glean information about the topology of the network from packet transmissions and maintain this in a local structured buffer containing the last known information about the agent's counterparts (as can be seen in the below figure). This memory structure is then fed to a GNN running locally which instructs the agent when and where to transmit their latest state information in the presence of interference by other agents also stability compared to task-specific reward functions in problems reliant on low-latency data attempting to concurrently communicate.</p>
