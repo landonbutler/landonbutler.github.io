@@ -2,43 +2,17 @@
 layout: page
 ---
 
-{{ content }}
-
-{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
-
-<div class="taxonomies-wrapper">
-  <ul class="taxonomies">
-    {%- for taxonomy in taxonomies -%}
-      <li>
-        {%- capture link -%}{{ page.permalink }}#{{ taxonomy.name }}{%- endcapture -%}
-        <a class="taxonomy" href="{{ link | relative_url }}">
-            <span>{{ taxonomy.name }}</span>
-            <span class="taxonomy-count">{{ taxonomy.size }}</span>
-        </a> 
-      </li>
-    {%- endfor -%}
-  </ul>
+<div class="home">
+    <p style="hyphens: none">
+        Hello! I'm Landon, a senior at the <a target="_blank" class="homepageLinks" href="https://www.upenn.edu/">University of Pennsylvania</a>. I'm concurrently pursuing a Master's degree in <a target="_blank" class="homepageLinks" href="https://dats.seas.upenn.edu/">Data Science</a> and a Bachelor's degree in <a target="_blank" class="homepageLinks" href="https://www.ese.upenn.edu/undergraduate/">Systems Engineering</a>, seeking to better understand the systems that comprise the world around us from a data-driven perspective. Additionally, I'm interested in learning how to leverage a broad range of quantitive and computational skills, and hence, am minors in <a target="_blank" class="homepageLinks" href="https://www.cis.upenn.edu/undergraduate/program-options/minor-in-cs/">Computer Science</a>, <a target="_blank" class="homepageLinks" href="https://www.math.upenn.edu/undergraduate/math-majors-and-minors/mathematics-minor">Mathematics</a>, and <a target="_blank" class="homepageLinks" href="https://statistics.wharton.upenn.edu/programs/undergraduate/statistics-minor/">Statistics</a>.
+    </p>
+    <p style="hyphens: none">
+        My research lies at the confluence of <a target="_blank" class="homepageLinks" href="http://www.network-science.org/">network science</a> and <a target="_blank" class="homepageLinks" href="https://www.geeksforgeeks.org/machine-learning/">machine learning</a>, where I develop and apply learning algorithms to dynamical systems situated on networks. So far, I've had the opportunity to research <a target="_blank" class="homepageLinks" href="https://landonbutler.github.io/research/">data distribution polices amongst robot teams</a> and <a target="_blank" class="homepageLinks" href="https://landonbutler.github.io/research/">anomaly detection on social networks</a>.
+    </p>
+    <p style="hyphens: none">
+        Recently, I've began a Head Teaching Assistantship in the <a target="_blank" class="homepageLinks" href="https://www.cis.upenn.edu/graduate/program-offerings/master-of-computer-and-information-technology/">MCIT online program</a> for <a target="_blank" class="homepageLinks" href="https://onlinelearning.seas.upenn.edu/mcit-online-course-list/">ESE 542: Statistics for Data Science</a>. I'm passionate about sharing these skills with budding data scientists, as learning how to capture, intepret, and leverage data will be pivotal for many careers over the next few decades.
+    </p>
+    <p style="hyphens: none">
+        Outside of academics, I'm also a percussionist in the <a target="_blank" class="homepageLinks" href="https://www.dolphin.upenn.edu/pennband/">Penn Band</a> and <a target="_blank" class="homepageLinks" href="https://www.youtube.com/watch?v=jZbI4XdOvA8">write drum scores in my spare time</a>.
+    </p>
 </div>
-
-{% comment %} Show posts by taxonomy {% endcomment %}
-{%- for taxonomy in taxonomies -%}
-  <h2 id="{{ taxonomy.name }}">
-    {{ taxonomy.name }}
-  </h2>
-  <ul class="post-list-by-taxonomy">
-    {%- assign posts = taxonomy.items -%}
-    {%- for post in posts -%}
-      <li>
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </li>
-    {%- endfor -%}
-  </ul>
-  <a href="#" onclick="backToTop()" class="back-to-top">Top &#8648;</a>
-{%- endfor -%}
-
-<script>
-  function backToTop() {
-    const main = document.getElementById("site-main");
-    main.scrollTop = 0;
-  }
-</script>
