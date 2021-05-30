@@ -1,6 +1,4 @@
 ---
-layout: archive-years
+layout: CV
 permalink: /CV/
 ---
-
-This is my CV

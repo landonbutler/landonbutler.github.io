@@ -52,128 +52,128 @@
 }
 
 .site-nav {
-  position: absolute;
-  top: 12px;
-  right: $spacing-unit / 2;
-  border: 1px solid;
-  border-radius: 0.4em;
-  text-align: right;
+    position: absolute;
+    top: 12px;
+    right: $spacing-unit / 2;
+    border: 1px solid;
+    border-radius: 0.4em;
+    text-align: right;
 
-  .nav-trigger {
-    display: none;
-  }
-
-  .menu-icon {
-    float: right;
-    width: $base-font-size * 2;
-    height: $base-font-size * 2;
-    line-height: 0;
-    text-align: center;
-
-    svg {
-      width: $base-font-size;
-      height: $base-font-size;
-      padding-top: $base-font-size / 2;
-    }
-  }
-
-  label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: $base-font-size * 2;
-    height: $base-font-size * 2;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  input ~ .trigger {
-    clear: both;
-    display: none;
-  }
-
-  input:checked ~ .trigger {
-    display: block;
-    padding-bottom: 5px;
-  }
-
-  ul.trigger {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-    li a {
-      line-height: $base-line-height * $base-font-size * 1.15;
-      display: inline;
-      padding: 5px 10px;
-      margin-left: auto;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      padding: 5px 10px;
-      display: inline-block;
-      text-align: right;
-      margin-left: auto;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  }
-
-  .current-page {
-    text-decoration: line-through;
-  }
-
-  @media screen and (min-width: $on-medium) {
-    position: static;
-    float: right;
-    border: none;
-    background-color: inherit;
-
-    label[for="nav-trigger"] {
-      display: none;
+    .nav-trigger {
+        display: none;
     }
 
     .menu-icon {
-      display: none;
+        float: right;
+        width: $base-font-size * 2;
+        height: $base-font-size * 2;
+        line-height: 0;
+        text-align: center;
+
+        svg {
+            width: $base-font-size;
+            height: $base-font-size;
+            padding-top: $base-font-size / 2;
+        }
+    }
+
+    label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: $base-font-size * 2;
+        height: $base-font-size * 2;
+        z-index: 2;
+        cursor: pointer;
     }
 
     input ~ .trigger {
-      display: block;
+        clear: both;
+        display: none;
+    }
+
+    input:checked ~ .trigger {
+        display: block;
+        padding-bottom: 5px;
     }
 
     ul.trigger {
-      li {
-        float: left;
-      }
-  
-      li a {
-        display: inline-block;
-        text-align: center;
-        padding: 5px 5px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-          margin-right: 0;
+        li a {
+            line-height: $base-line-height * $base-font-size * 1.15;
+            display: inline;
+            padding: 5px 10px;
+            margin-left: auto;
         }
-        margin-left: 10px;
-      }
 
-      .dropdown-content a {
-        display: block;
-        text-align: left;
-        padding: 5px 15px 5px 5px;
-        margin-left: 10px;
-      }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 5px 10px;
+            display: inline-block;
+            text-align: right;
+            margin-left: auto;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     }
-  }
+
+    .current-page {
+        text-decoration: underline;
+    }
+
+    @media screen and (min-width: $on-medium) {
+        position: static;
+        float: right;
+        border: none;
+        background-color: inherit;
+
+        label[for="nav-trigger"] {
+            display: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        input ~ .trigger {
+            display: block;
+        }
+
+        ul.trigger {
+            li {
+                float: left;
+            }
+
+            li a {
+                display: inline-block;
+                text-align: center;
+                padding: 5px 5px;
+                // Gaps between nav items, but not on the last one
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+
+                margin-left: 10px;
+            }
+
+            .dropdown-content a {
+                display: block;
+                text-align: left;
+                padding: 5px 15px 5px 5px;
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
 /**

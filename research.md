@@ -1,7 +1,4 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: research
+permalink: /research/
 ---
-
-Another minimal style of Jekyll theme for writers.
