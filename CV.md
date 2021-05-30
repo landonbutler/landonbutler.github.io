@@ -1,5 +1,7 @@
 ---
 layout: archive-years
 title: Years
-permalink: /years/
+permalink: /CV/
 ---
+
+This is my CV
