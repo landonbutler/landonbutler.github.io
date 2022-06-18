@@ -14,7 +14,7 @@ paginate: 10
 skin: daylight
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
-# google_analytics: 
+google_analytics: G-212F1EPX32
 
 # Uncomment the below lines and set the Disqus shortname for enabling Disqus
 # 
