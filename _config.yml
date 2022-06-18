@@ -9,8 +9,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-theme-hamilton
+  - jekyll-remote-theme
 paginate: 10
 
+remote_theme: ngzhio/jekyll-theme-hamilton
 skin: daylight
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
