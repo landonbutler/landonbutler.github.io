@@ -1,4 +1,0 @@
----
-layout: teaching
-permalink: /teaching/
----

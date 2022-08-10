@@ -1,4 +1,0 @@
----
-layout: CV
-permalink: /CV/
----
